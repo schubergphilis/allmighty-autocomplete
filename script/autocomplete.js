@@ -115,7 +115,7 @@ app.directive('autocomplete', function () {
 
 
             for (var a in attrs) {
-                attr = a.replace('attr', '').toLowerCase();
+                attr = String(a).replace('attr', '').toLowerCase();
                 // add attribute overriding defaults
                 // and preventing duplication
                 if (a.indexOf('attr') === 0) {
@@ -264,7 +264,7 @@ app.filter('highlight', ['$sce', function ($sce) {
                     ')',
                 exp = new RegExp(words, 'gi');
             if (words.length) {
-                input = input.replace(exp, "<span class=\"highlight\">$1</span>");
+                input = String(input).replace(exp, "<span class=\"highlight\">$1</span>");
             }
         }
         return $sce.trustAsHtml(input);

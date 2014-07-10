@@ -1,3 +1,9 @@
+purpose of this fork
+====================
+- support click-activation on input's focus
+- show the whole list of options on empty search
+
+
 allmighty-autocomplete
 ======================
 

@@ -12,5 +12,5 @@
     ],
     "license": "MIT",
     "main": ["./script/autocomplete.js", "./script/autocomplete.js"],
-    "ignore": []
+    "ignore": [".jshintrc"]
 }
